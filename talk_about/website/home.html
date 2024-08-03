@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Talkabout</title>
+  <meta name="description" content="Web app for discussion">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+
+  <meta name="author" content="The Maxt">
+
+  <!-- Favicons -->
+  <link href="assets/img/talkabout.png" rel="icon">
+  <link href="assets/img/talkabout.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+ 
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+    <!--====================== Display for small screen ======================-->
+
+    <div id="small_display">
+
+        <!--============ Header ================-->
+        <div style="height: 130px; background-color: #3A8ECD;" id="header">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-9" style="font-weight: bold; color: white;">Talkabout</div>
+                    <div class="col">
+                        <i class="bi bi-search" style="color: white;"></i>
+                    </div>
+                    <div class="col" style="color: white;">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-auto topnav">
+                            <a href="#">
+                                <i class="bi bi-camera-fill"></i>
+                            </a>
+                            <a href="#" class="active">Discussions
+                                <span class="badge rounded-pill" style="color: #3A8ECD; background-color: white;">2</span>
+                            </a>
+                            <a href="#">Status</a>
+                            <a href="#">Appels</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============ End header ================-->
+
+        <!--====================== Body ======================-->
+        <div class="container">
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px;">
+                                <img src="assets/img/logo2_2.png" class="circle-60" alt="profil">
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">The Maxt</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold; color: #3A8ECD; margin-left: 2px;">hier</div>
+                            <span class="badge rounded-pill" style="color: #ffffff; background-color: #3A8ECD;">1</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: orange; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px;">21/12/2023</div>
+                            <span class="badge rounded-pill" style="color: #ffffff; background-color: #3A8ECD;">1</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">    
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px; margin-left: 2px;">Sam</div>
+                            <div class="row"><i class="bi bi-check2-all" style="color: #3A8ECD;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px; margin-left: 2px;">Sam</div>
+                            <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px; margin-left: 2px;">Sam</div>
+                            <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px; margin-left: 2px;">Sam</div>
+                            <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px; margin-left: 2px;">Sam</div>
+                            <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px; margin-left: 2px;">Sam</div>
+                            <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px; margin-left: 2px;">Sam</div>
+                            <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="conversation.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                <div style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                <p style="font-size: 25px; 
+                                text-align: center; vertical-align: middle; line-height: 60px; 
+                                font-weight: bold; color: #ffffff;">2</p>
+                            </div>
+                        </div>
+                        <div class="col-7" style="padding: 20px 0;">
+                            <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                            <div class="row">Salut !</div>
+                        </div>
+                        <div class="col" style="padding: 20px 0;">
+                            <div class="row" style="font-size: 10px; margin-left: 2px;">Sam</div>
+                            <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Floating add button -->
+        <a href="#">
+            <div class="floating-container">
+                <div class="floating-button">
+                    <i class="bi bi-pencil"></i>
+                </div>
+            </div>
+        </a>
+        <!-- End floating add button -->
+
+        <hr style="margin-bottom: 80px; border-style: none;">
+
+        <!--====================== End body ======================-->
+
+    </div>
+
+    <!--====================== End display for small screen ======================-->
+
+    <!--====================== Display for large screen ======================-->
+
+    <div id="large_display">
+
+        <!--=================== Header ===================-->
+        <div class="row header">
+            <div class="col-6 col-lg-4">
+                <div class="row align-items-center" style="padding: 10px; background-color: #3A8ECD;">
+                    <div class="col-1" style="margin-left: 15px;">
+                        <a href="#">
+                            <i class="bi bi-list" style="color: #ffffff; font-weight: bold;"></i>
+                        </a>
+                    </div>
+                    <div class="col" style="text-align: center;">
+                        <form action="#" method="post">
+                            <input type="text" placeholder="Rechercher" class="col-12" 
+                            style="background-color: #ffffff3d; color: #ffffff; border-style: none; border-radius: 5px;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <!--=================== End header ===================-->
+
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-6 col-lg-4">
+                <!--==================== Discussion list ========================-->
+                <div class="row" style="overflow-y:scroll; overflow-x:hidden; height: 100vh; background-color: #ffffff;">
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px;">
+                                        <img src="assets/img/logo2_2.png" class="circle-60" alt="profil">
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">The Maxt</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold; color: #3A8ECD; margin-left: 2px;">hier</div>
+                                    <span class="badge rounded-pill" style="color: #ffffff; background-color: #3A8ECD;">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: orange; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="font-size: 10px;">21/12/2023</div>
+                                    <span class="badge rounded-pill" style="color: #ffffff; background-color: #3A8ECD;">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">    
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2-all" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                        <div style="margin: 5px;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-60" style="margin: 10px; background-color: #25f525; text-align: center;">
+                                        <p style="font-size: 25px; 
+                                        text-align: center; vertical-align: middle; line-height: 60px; 
+                                        font-weight: bold; color: #ffffff;">2</p>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 20px 0;">
+                                    <div class="row" style="font-weight: bold;">+237 674 18 73 58</div>
+                                    <div class="row">Salut !</div>
+                                </div>
+                                <div class="col" style="padding: 20px 0;">
+                                    <div class="row" style="margin-left: 2px;">Sam</div>
+                                    <div class="row"><i class="bi bi-check2" style="color: #3A8ECD;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <!--==================== End discussion list ========================-->
+            </div>
+
+            <div class="col"></div>
+        </div>
+
+    </div>
+
+    <!--====================== End display for large screen ======================-->
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+
+</html>

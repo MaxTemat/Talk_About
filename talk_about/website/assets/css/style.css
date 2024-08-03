@@ -1,0 +1,307 @@
+/*************************************************
+The Maxt CSS template
+*************************************************/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@media screen and (max-width: 650px) {
+  #small_display{
+      display: block;
+  }
+  #large_display{
+    display: none;
+  }
+  body
+  {
+    font-family: Roboto;
+    background-color: #ffffff;
+  }
+}
+@media screen and (min-width: 651px) {
+  #large_display{
+      display: block;
+  }
+  #small_display{
+    display: none;
+  }
+  body
+  {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3a8dcd23;
+    overflow-x:hidden;
+  }
+}
+
+.header
+{
+    /* background-color: #3A8ECD; */
+
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding: 10px;
+    font-weight: bold;
+    opacity: 0.5;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-radius: 2px;
+  }
+  
+  .topnav a.active {
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .circle-60
+  {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+
+  .center {
+    position: relative;
+    /*border: 3px solid green;*/
+  }
+  
+  .center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input::placeholder
+  {
+    color: #ffffffd0;
+  }
+
+  input[type=text]:focus
+  {
+    outline: none;
+  }
+
+  textarea:focus
+  {
+    outline: none;
+  }
+
+  /****************** Css for floating button ******************/
+  @-webkit-keyframes come-in {
+    0% {
+      -webkit-transform: translatey(100px);
+              transform: translatey(100px);
+      opacity: 0;
+    }
+    30% {
+      -webkit-transform: translateX(-50px) scale(0.4);
+              transform: translateX(-50px) scale(0.4);
+    }
+    70% {
+      -webkit-transform: translateX(0px) scale(1.2);
+              transform: translateX(0px) scale(1.2);
+    }
+    100% {
+      -webkit-transform: translatey(0px) scale(1);
+              transform: translatey(0px) scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes come-in {
+    0% {
+      -webkit-transform: translatey(100px);
+              transform: translatey(100px);
+      opacity: 0;
+    }
+    30% {
+      -webkit-transform: translateX(-50px) scale(0.4);
+              transform: translateX(-50px) scale(0.4);
+    }
+    70% {
+      -webkit-transform: translateX(0px) scale(1.2);
+              transform: translateX(0px) scale(1.2);
+    }
+    100% {
+      -webkit-transform: translatey(0px) scale(1);
+              transform: translatey(0px) scale(1);
+      opacity: 1;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .floating-container {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    margin: 35px 25px;
+  }
+  .floating-container:hover {
+    height: 300px;
+  }
+  .floating-container:hover .floating-button {
+    box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+    -webkit-transform: translatey(5px);
+            transform: translatey(5px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .floating-container:hover .element-container .float-element:nth-child(1) {
+    -webkit-animation: come-in 0.4s forwards 0.2s;
+            animation: come-in 0.4s forwards 0.2s;
+  }
+  .floating-container:hover .element-container .float-element:nth-child(2) {
+    -webkit-animation: come-in 0.4s forwards 0.4s;
+            animation: come-in 0.4s forwards 0.4s;
+  }
+  .floating-container:hover .element-container .float-element:nth-child(3) {
+    -webkit-animation: come-in 0.4s forwards 0.6s;
+            animation: come-in 0.4s forwards 0.6s;
+  }
+  .floating-container .floating-button {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: #3A8ECD;
+    bottom: 0;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    font-size: 23px;
+    z-index: 100;
+    box-shadow: 0 10px 25px -5px #3A8ECD;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .floating-container .float-element {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  .floating-container .float-element .material-icons {
+    vertical-align: middle;
+    font-size: 16px;
+  }
+  /****************** End css for floating button ******************/
+  
+  /****************** Custom scroll bar ***************************/
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;   /*Vertical*/
+    height: 0px;  /*Horizontal*/
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3A8ECD;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3A8ECD;
+  }
+  /****************** End custom scroll bar **********************/
+
+  /********** Textarea auto resize **********/
+  [contentEditable=true]:empty:not(:focus)::before{
+    content:attr(data-ph)
+  }
+
+  div:focus{
+    outline: none;
+  }
+  /********** End textarea auto resize **********/
+
+  /************ Div message ***********/
+  .message-1{
+    border-radius: 20px 20px 0px 20px;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .message-1a{
+    border-radius: 20px 20px 20px 20px;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .message-2{
+    border-radius: 20px 20px 20px 0px;
+    background-color: #3a8dcd85;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .message-2b{
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    border-color: #3A8ECD;
+    padding: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+
+  .msg-header{
+    font-weight: bold;
+    color: #3A8ECD;
+  }
+  /************ End div message ***********/

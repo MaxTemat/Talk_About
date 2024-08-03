@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Talkabout</title>
+  <meta name="description" content="Web app for discussion">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+
+  <meta name="author" content="The Maxt">
+
+  <!-- Favicons -->
+  <link href="assets/img/talkabout.png" rel="icon">
+  <link href="assets/img/talkabout.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+ 
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: #3a8dcd15;">
+ 
+    <!--====================== Display for small screen ======================-->
+
+    <div id="small_display">
+        <!--============ Header ================-->
+        <div style="background-color: #3A8ECD;" class="header">
+            <div class="container" style="padding: 10px;">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <a href="home.html">
+                            <i class="bi bi-arrow-left" style="color: #ffffff; font-weight: bold;"></i>
+                        </a>
+                    </div>
+                    <div class="col" style="color: #ffffff; font-weight: bold;">
+                       <img src="assets/img/logo2_2.png" alt="Profil" style="height: 40px; width: 40px; object-fit: contain;">
+                       The Maxt 
+                    </div>
+                    <div class="col-2" style="color: #ffffff; font-weight: bold;">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="col-1" style="color: #ffffff; font-weight: bold;">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============ End header ================-->
+        
+        <!--============ Footer write ================-->
+        <div class="footer" style="background-color: #78b7e7;">
+            <div class="container" style="padding: 15px;">
+                <div class="row align-items-center">
+                    <div class="col-1" style="color: #ffffff; font-weight: bold;">
+                        <a href="#"><i class="bi bi-emoji-smile" style="color: #ffffff; font-weight: bold;"></i></a>
+                    </div>
+                    <div class="col-9" style="color: #ffffff; font-weight: bold;">
+                        <form action="#" method="post">
+                            <div class="col" contentEditable=true data-ph="Ecrire un message" 
+                            style="font-weight: lighter; max-height: 100px; overflow: auto;"
+                            id="send_sms" oninput="ShowHide_Send();"></div>
+                        </form>
+                    </div>
+                    <div class="col-1" id="send_file" style="rotate: 30deg; margin-top: 5px;">
+                        <a href="#">
+                            <i class="bi bi-paperclip" style="color: #ffffff; font-weight: bold;"></i>
+                        </a>
+                    </div>
+                    <div class="col-1" id="send_voice" style="color: #ffffff; font-weight: bold;">
+                        <a href="#"><i class="bi bi-mic" style="color: #ffffff; font-weight: bold;"></i></a>
+                    </div>
+                    <div class="col-2" id="send_btn" style="display: none;">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" 
+                            width="20px" height="20px" viewBox="0 0 24 24" style="color: #ffffff;">
+                            <path fill="currentColor" d="m21.426 11.095l-17-8A.999.999 0 0 0 3.03 4.242L4.969 12L3.03 19.758a.998.998 0 0 0 1.396 1.147l17-8a1 
+                            1 0 0 0 0-1.81M5.481 18.197l.839-3.357L12 12L6.32 9.16l-.839-3.357L18.651 12z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============ End footer write ================-->
+
+        <!--====================== Body ======================-->
+        <div class="container" style="margin-top: 70px; margin-bottom: 70px; overflow-y:scroll; overflow-x:hidden; height: 100vh;">
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div class="row message-1">
+                        <div style="text-align: justify;">Salut ! Comment tu vas?</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:32 <i class="bi bi-check2-all" style="color: #3A8ECD;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row message-2">
+                        <div style="text-align: justify;">Bien par la grâce de Dieu merci et toi ?</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:33
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div class="row message-1a">
+                        <div style="text-align: justify;">Bien.</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:34 <i class="bi bi-check2-all" style="color: #3A8ECD;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div class="row message-1">
+                        <div style="text-align: justify;">Comment avance le projet ?</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:34 <i class="bi bi-check2-all" style="color: #3A8ECD;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row message-2">
+                        <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                            <div class="message-2b">
+                                <div class="msg-header">TheMaxt</div>
+                                <div>Comment avance le ...</div>
+                            </div>
+                        </a>
+                        <div style="text-align: justify;">Bien.</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:35
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div class="row message-1">
+                        <div style="text-align: justify;">Salut ! Comment tu vas?</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:32 <i class="bi bi-check2-all" style="color: #3A8ECD;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row message-2">
+                        <div style="text-align: justify;">Bien par la grâce de Dieu merci et toi ?</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:33
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div class="row message-1a">
+                        <div style="text-align: justify;">Bien.</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:34 <i class="bi bi-check2-all" style="color: #3A8ECD;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div class="row message-1">
+                        <div style="text-align: justify;">Comment avance le projet ?</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:34 <i class="bi bi-check2-all" style="color: #3A8ECD;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row message-2">
+                        <a href="#" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+                            <div class="message-2b">
+                                <div class="msg-header">TheMaxt</div>
+                                <div>Comment avance le ...</div>
+                            </div>
+                        </a>
+                        <div style="text-align: justify;">Bien.</div>
+                        <div>
+                            <div style="text-align: end;">
+                                12:35
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+        <!--====================== End body ======================-->
+    </div>
+
+    <!--====================== End display for small screen ======================-->
+
+    <!--====================== Display for large screen ======================-->
+
+    <div id="large_display">
+
+        <!--=================== Header ===================-->
+        <div class="row header">
+            <div class="col-6 col-lg-4">
+                <div class="row align-items-center" style="padding: 10px; background-color: #3A8ECD;">
+                    <div class="col-1" style="margin-left: 15px;">
+                        <a href="#">
+                            <i class="bi bi-list" style="color: #ffffff; font-weight: bold;"></i>
+                        </a>
+                    </div>
+                    <div class="col" style="text-align: center;">
+                        <form action="#" method="post">
+                            <input type="text" placeholder="Rechercher" class="col-11" 
+                            style="background-color: #ffffff3d; color: #ffffff; border-style: none; border-radius: 5px;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <!--=================== End header ===================-->
+    </div>
+
+    <!--====================== End display for large screen ======================-->
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+
+</html>
